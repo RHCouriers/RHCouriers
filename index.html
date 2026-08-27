@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RJH Couriers | Same Day Courier Newcastle upon Tyne</title>
+
+  <meta name="description" content="RJH Couriers provides same day courier services in Newcastle upon Tyne, the North East and throughout the UK. Call or WhatsApp for a quote.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1c2733;
+      background: #f5f7fa;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #071c2c;
+      color: white;
+      padding: 16px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #f5b400;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f5b400;
+    }
+
+    .hero {
+      min-height: 620px;
+      background:
+        linear-gradient(rgba(7,28,44,0.86), rgba(7,28,44,0.86)),
+        url("https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      padding: 80px 7%;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 750px;
+    }
+
+    .hero-tag {
+      color: #f5b400;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: 58px;
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 21px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: #f5b400;
+      color: #071c2c;
+    }
+
+    .btn-call {
+      background: white;
+      color: #071c2c;
+    }
+
+    .btn-whatsapp {
+      background: #25d366;
+      color: white;
+    }
+
+    section {
+      padding: 75px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      color: #071c2c;
+      margin-bottom: 8px;
+    }
+
+    .section-title p {
+      color: #6c7882;
+      font-size: 18px;
+    }
+
+    .services {
+      background: white;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: #f6f8fa;
+      padding: 30px;
+      border-radius: 12px;
+      border-top: 5px solid #f5b400;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.07);
+    }
+
+    .service-card .icon {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .service-card h3 {
+      color: #071c2c;
+      margin-bottom: 10px;
+    }
+
+    .coverage {
+      background: #eef2f5;
+    }
+
+    .coverage-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      max-width: 1100px;
+      margin: auto;
+      align-items: center;
+    }
+
+    .uk-map {
+      background: #071c2c;
+      border-radius: 20px;
+      padding: 35px;
+      min-height: 520px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+
+    .uk-map svg {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+
+    .coverage-list {
+      background: white;
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .coverage-list h3 {
+      font-size: 28px;
+      color: #071c2c;
+      margin-bottom: 20px;
+    }
+
+    .coverage-list ul {
+      padding-left: 22px;
+    }
+
+    .coverage-list li {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .coverage-list li::marker {
+      color: #f5b400;
+    }
+
+    .why-us {
+      background: #071c2c;
+      color: white;
+    }
+
+    .why-us .section-title h2,
+    .why-us .section-title p {
+      color: white;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+      text-align: center;
+    }
+
+    .feature {
+      padding: 25px;
+    }
+
+    .feature-number {
+      width: 55px;
+      height: 55px;
+      margin: 0 auto 15px;
+      background: #f5b400;
+      color: #071c2c;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .quote {
+      background: white;
+    }
+
+    .quote-wrapper {
+      max-width: 950px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 40px;
+      background: #f4f6f8;
+      padding: 40px;
+      border-radius: 15px;
+    }
+
+    .contact-info h3 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #071c2c;
+    }
+
+    .contact-info a {
+      display: block;
+      color: #071c2c;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 15px 0;
+      font-size: 18px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 13px;
+      border: 1px solid #ccd3d9;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    form textarea {
+      height: 125px;
+      resize: vertical;
+    }
+
+    form button {
+      border: 0;
+      cursor: pointer;
+      width: 100%;
+      font-size: 17px;
+    }
+
+    footer {
+      background: #04131e;
+      color: #c7d0d6;
+      text-align: center;
+      padding: 35px 7%;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 25px;
+      bottom: 25px;
+      width: 62px;
+      height: 62px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      z-index: 1000;
+    }
+
+    @media (max-width: 950px) {
+      .service-grid,
+      .features {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .coverage-wrapper,
+      .quote-wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 45px;
+      }
+    }
+
+    @media (max-width: 650px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+
+      .hero {
+        text-align: center;
+        min-height: 580px;
+      }
+
+      .hero h1 {
+        font-size: 37px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+
+      .service-grid,
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .quote-wrapper {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">RJH <span>COURIERS</span></div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#coverage">UK Coverage</a>
+    <a href="#quote">Quote</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+    <div class="hero-tag">
+      Newcastle upon Tyne Same Day Courier
+    </div>
+
+    <h1>
+      Fast & Reliable Courier Service Across the UK
+    </h1>
+
+    <p>
+      RJH Couriers provides professional same day collection and delivery
+      services from Newcastle upon Tyne to destinations throughout the UK.
+      Whether it's an urgent parcel, important documents or business goods,
+      we're ready to help.
+    </p>
+
+    <div class="buttons">
+
+      <a class="btn btn-primary" href="#quote">
+        Get a Quote
+      </a>
+
+      <a class="btn btn-call" href="tel:07811237456">
+        ☎ 07811 237456
+      </a>
+
+      <a
+        class="btn btn-whatsapp"
+        href="https://wa.me/447811237456?text=Hello%20RJH%20Couriers%2C%20I%20would%20like%20a%20courier%20quote."
+        target="_blank"
+      >
+        💬 WhatsApp Us
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="services" id="services">
+
+  <div class="section-title">
+    <h2>Our Courier Services</h2>
+    <p>Professional delivery solutions for businesses and individuals.</p>
+  </div>
+
+  <div class="service-grid">
+
+    <div class="service-card">
+      <div class="icon">🚐</div>
+      <h3>Same Day Courier</h3>
+      <p>
+        Fast collection and direct delivery for urgent items.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">📦</div>
+      <h3>Parcel Delivery</h3>
+      <p>
+        Reliable transport for parcels, packages and business goods.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">📄</div>
+      <h3>Urgent Documents</h3>
+      <p>
+        Secure direct delivery for important documents and paperwork.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">🇬🇧</div>
+      <h3>UK-Wide Delivery</h3>
+      <p>
+        Collections in Newcastle and deliveries across mainland UK.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="coverage" id="coverage">
+
+  <div class="section-title">
+    <h2>UK-Wide Courier Coverage</h2>
+    <p>Based in Newcastle upon Tyne and delivering throughout the UK.</p>
+  </div>
+
+  <div class="coverage-wrapper">
+
+    <div class="uk-map">
+
+      <!-- Simple stylised UK map -->
+      <svg viewBox="0 0 420 650" xmlns="http://www.w3.org/2000/svg">
+
+        <path
+          d="M240 25
+             L280 55
+             L265 90
+             L292 120
+             L275 155
+             L300 195
+             L270 220
+             L282 255
+             L250 285
+             L260 320
+             L230 342
+             L245 372
+             L225 405
+             L245 438
+             L225 465
+             L250 500
+             L225 535
+             L195 548
+             L175 585
+             L145 610
+             L120 600
+             L135 570
+             L110 550
+             L125 520
+             L105 495
+             L125 470
+             L105 445
+             L135 425
+             L125 390
+             L150 370
+             L138 340
+             L165 315
+             L150 285
+             L178 260
+             L165 225
+             L195 200
+             L185 170
+             L210 140
+             L195 110
+             L220 80
+             Z"
+          fill="#f5b400"
+          stroke="white"
+          stroke-width="7"
+        />
+
+        <circle cx="228" cy="300" r="10" fill="#25d366"/>
+        <text x="245" y="307" fill="white" font-size="22" font-weight="bold">
+          Newcastle
+        </text>
+
+        <circle cx="210" cy="390" r="8" fill="white"/>
+        <text x="225" y="396" fill="white" font-size="18">
+          Manchester
+        </text>
+
+        <circle cx="192" cy="455" r="8" fill="white"/>
+        <text x="205" y="461" fill="white" font-size="18">
+          Birmingham
+        </text>
+
+        <circle cx="215" cy="540" r="8" fill="white"/>
+        <text x="230" y="546" fill="white" font-size="18">
+          London
+        </text>
+
+      </svg>
+
+    </div>
+
+    <div class="coverage-list">
+
+      <h3>Places We Cover</h3>
+
+      <ul>
+        <li>Newcastle upon Tyne</li>
+        <li>Gateshead</li>
+        <li>North Tyneside</li>
+        <li>South Tyneside</li>
+        <li>Sunderland</li>
+        <li>Durham</li>
+        <li>Northumberland</li>
+        <li>Teesside</li>
+        <li>York</li>
+        <li>Leeds</li>
+        <li>Manchester</li>
+        <li>Liverpool</li>
+        <li>Sheffield</li>
+        <li>Nottingham</li>
+        <li>Leicester</li>
+        <li>Birmingham</li>
+        <li>Coventry</li>
+        <li>Bristol</li>
+        <li>Cardiff</li>
+        <li>London</li>
+        <li>Edinburgh</li>
+        <li>Glasgow</li>
+        <li>And destinations throughout mainland UK</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="why-us">
+
+  <div class="section-title">
+    <h2>Why Choose RJH Couriers?</h2>
+    <p>A straightforward courier service you can depend on.</p>
+  </div>
+
+  <div class="features">
+
+    <div class="feature">
+      <div class="feature-number">1</div>
+      <h3>Fast Response</h3>
+      <p>Contact us directly for urgent courier requirements.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-number">2</div>
+      <h3>Direct Delivery</h3>
+      <p>Your goods are taken directly to the destination.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-number">3</div>
+      <h3>Newcastle Based</h3>
+      <p>Local courier service covering Newcastle and the North East.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-number">4</div>
+      <h3>Nationwide Coverage</h3>
+      <p>Delivery available to destinations throughout mainland UK.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="quote" id="quote">
+
+  <div class="section-title">
+    <h2>Get a Courier Quote</h2>
+    <p>Call, email or send us your delivery details through WhatsApp.</p>
+  </div>
+
+  <div class="quote-wrapper">
+
+    <div class="contact-info">
+
+      <h3>RJH Couriers</h3>
+
+      <p>
+        Same day courier service based in Newcastle upon Tyne.
+      </p>
+
+      <a href="tel:07811237456">
+        ☎ 07811 237456
+      </a>
+
+      <a href="mailto:rjhcouriers@outlook.com">
+        ✉ rjhcouriers@outlook.com
+      </a>
+
+      <a
+        class="btn btn-whatsapp"
+        href="https://wa.me/447811237456?text=Hello%20RJH%20Couriers%2C%20I%20would%20like%20a%20courier%20quote."
+        target="_blank"
+      >
+        💬 Message on WhatsApp
+      </a>
+
+    </div>
+
+    <form id="quoteForm">
+
+      <input
+        type="text"
+        id="name"
+        placeholder="Your name"
+        required
+      >
+
+      <input
+        type="tel"
+        id="phone"
+        placeholder="Telephone number"
+        required
+      >
+
+      <input
+        type="text"
+        id="collection"
+        placeholder="Collection postcode"
+        required
+      >
+
+      <input
+        type="text"
+        id="delivery"
+        placeholder="Delivery postcode"
+        required
+      >
+
+      <textarea
+        id="details"
+        placeholder="What do you need delivered?"
+      ></textarea>
+
+      <button type="submit" class="btn btn-whatsapp">
+        Send Quote Request via WhatsApp
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <p>
+    <strong>RJH Couriers</strong> | Newcastle upon Tyne
+  </p>
+
+  <p>
+    Tel:
+    <a href="tel:07811237456" style="color:#f5b400;">
+      07811 237456
+    </a>
+
+    |
+
+    Email:
+    <a href="mailto:rjhcouriers@outlook.com" style="color:#f5b400;">
+      rjhcouriers@outlook.com
+    </a>
+  </p>
+
+  <p style="margin-top:10px;">
+    &copy; <span id="year"></span> RJH Couriers. All rights reserved.
+  </p>
+
+</footer>
+
+<a
+  class="floating-whatsapp"
+  href="https://wa.me/447811237456?text=Hello%20RJH%20Couriers%2C%20I%20would%20like%20a%20courier%20quote."
+  target="_blank"
+  aria-label="WhatsApp RJH Couriers"
+>
+  💬
+</a>
+
+<script>
+
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+  document
+    .getElementById("quoteForm")
+    .addEventListener("submit", function(event) {
+
+      event.preventDefault();
+
+      const name =
+        document.getElementById("name").value;
+
+      const phone =
+        document.getElementById("phone").value;
+
+      const collection =
+        document.getElementById("collection").value;
+
+      const delivery =
+        document.getElementById("delivery").value;
+
+      const details =
+        document.getElementById("details").value;
+
+      const message =
+        "Hello RJH Couriers, I would like a courier quote.\n\n" +
+        "Name: " + name + "\n" +
+        "Telephone: " + phone + "\n" +
+        "Collection postcode: " + collection + "\n" +
+        "Delivery postcode: " + delivery + "\n" +
+        "Delivery details: " + details;
+
+      const whatsappURL =
+        "https://wa.me/447811237456?text=" +
+        encodeURIComponent(message);
+
+      window.open(whatsappURL, "_blank");
+
+    });
+
+</script>
+
+</body>
+</html>
