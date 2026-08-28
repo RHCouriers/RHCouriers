@@ -27,7 +27,7 @@
     }
 
     header {
-      background: #071c2c;
+      background: #131313;
       color: white;
       padding: 16px 7%;
       display: flex;
@@ -45,7 +45,7 @@
     }
 
     .logo span {
-      color: #f5b400;
+      color: #FFFFFF;
     }
 
     nav a {
@@ -56,14 +56,15 @@
     }
 
     nav a:hover {
-      color: #f5b400;
+      color: #FFFFFF;
     }
 
     .hero {
       min-height: 620px;
       background:
-        linear-gradient(rgba(7,28,44,0.86), rgba(7,28,44,0.86)),
-        url("https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1600&q=80");
+        linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)),
+        url("https://raw.githubusercontent.com/RHCouriers/RHCouriers/refs/heads/main/rjhhero.jpg");
+        dim:10%;
       background-size: cover;
       background-position: center;
       display: flex;
@@ -77,7 +78,7 @@
     }
 
     .hero-tag {
-      color: #f5b400;
+      color: #FFFFFF;
       text-transform: uppercase;
       font-weight: bold;
       letter-spacing: 1px;
@@ -115,13 +116,18 @@
     }
 
     .btn-primary {
-      background: #f5b400;
-      color: #071c2c;
+      background: #131313;
+      color: #131313;
+      stroke: #FFFFFF;
+      stroke-width: "2";
+      border: 1px solid #FFFFFF;
+
+
     }
 
     .btn-call {
       background: white;
-      color: #071c2c;
+      color: #131313;
     }
 
     .btn-whatsapp {
@@ -140,7 +146,7 @@
 
     .section-title h2 {
       font-size: 38px;
-      color: #071c2c;
+      color: #131313;
       margin-bottom: 8px;
     }
 
@@ -163,7 +169,7 @@
       background: #f6f8fa;
       padding: 30px;
       border-radius: 12px;
-      border-top: 5px solid #f5b400;
+      border-top: 5px solid #131313;
       box-shadow: 0 8px 22px rgba(0,0,0,0.07);
     }
 
@@ -173,7 +179,7 @@
     }
 
     .service-card h3 {
-      color: #071c2c;
+      color: #131313;
       margin-bottom: 10px;
     }
 
@@ -191,7 +197,7 @@
     }
 
     .uk-map {
-      background: #071c2c;
+      background: #171717;
       border-radius: 20px;
       padding: 35px;
       min-height: 520px;
@@ -216,7 +222,7 @@
 
     .coverage-list h3 {
       font-size: 28px;
-      color: #071c2c;
+      color: #131313;
       margin-bottom: 20px;
     }
 
@@ -230,11 +236,11 @@
     }
 
     .coverage-list li::marker {
-      color: #f5b400;
+      color: #131313;
     }
 
     .why-us {
-      background: #071c2c;
+      background: #131313;
       color: white;
     }
 
@@ -258,8 +264,8 @@
       width: 55px;
       height: 55px;
       margin: 0 auto 15px;
-      background: #f5b400;
-      color: #071c2c;
+      background: #FFFFFF;
+      color: #131313;
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -286,12 +292,12 @@
     .contact-info h3 {
       font-size: 28px;
       margin-bottom: 15px;
-      color: #071c2c;
+      color: #131313;
     }
 
     .contact-info a {
       display: block;
-      color: #071c2c;
+      color: #131313;
       text-decoration: none;
       font-weight: bold;
       margin: 15px 0;
@@ -413,7 +419,7 @@
 <body>
 
 <header>
-  <div class="logo">RJH <span>COURIERS</span></div>
+  <img src="https://raw.githubusercontent.com/RHCouriers/RHCouriers/refs/heads/main/rjh.svg" style="height:100px; width:auto; al"> <div class="logo">RJH <span>COURIERS</span></div>
 
   <nav>
     <a href="#home">Home</a>
@@ -432,7 +438,7 @@
     </div>
 
     <h1>
-      Fast & Reliable Courier Service Across the UK
+      Fast & Reliable Service Across the UK
     </h1>
 
     <p>
@@ -442,9 +448,9 @@
       we're ready to help.
     </p>
 
-    <div class="buttons">
+    <div class="buttons" style="align-items:center; align-content:center; ">
 
-      <a class="btn btn-primary" href="#quote">
+      <a class="btn btn-primary" href="#quote" style="color:#FFFFFF;">
         Get a Quote
       </a>
 
@@ -457,7 +463,7 @@
         href="https://wa.me/447811237456?text=Hello%20RJH%20Couriers%2C%20I%20would%20like%20a%20courier%20quote."
         target="_blank"
       >
-        💬 WhatsApp Us
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="icon" style="height:30px; width:auto; align-items:center; vertical-align: middle;"> WhatsApp Us
       </a>
 
     </div>
@@ -469,7 +475,7 @@
 <section class="services" id="services">
 
   <div class="section-title">
-    <h2>Our Courier Services</h2>
+    <h2>Our Services</h2>
     <p>Professional delivery solutions for businesses and individuals.</p>
   </div>
 
@@ -514,7 +520,7 @@
 <section class="coverage" id="coverage">
 
   <div class="section-title">
-    <h2>UK-Wide Courier Coverage</h2>
+    <h2>UK-Wide Coverage</h2>
     <p>Based in Newcastle upon Tyne and delivering throughout the UK.</p>
   </div>
 
@@ -567,28 +573,36 @@
              L195 110
              L220 80
              Z"
-          fill="#f5b400"
-          stroke="white"
+          fill="#131313"
+          stroke="#787878"
           stroke-width="7"
         />
 
-        <circle cx="228" cy="300" r="10" fill="#25d366"/>
-        <text x="245" y="307" fill="white" font-size="22" font-weight="bold">
+        <circle cx="228" cy="300" r="10" fill="#25d366" stroke="#1f5611"
+          stroke-width="3" paint-order="stroke fill"/>
+        <text x="245" y="307" fill="white" font-size="22" font-weight="bold" stroke="#000000"
+          stroke-width="3" paint-order="stroke fill">
           Newcastle
         </text>
 
-        <circle cx="210" cy="390" r="8" fill="white"/>
-        <text x="225" y="396" fill="white" font-size="18">
+        <circle cx="210" cy="390" r="8" fill="white" stroke="#000000"
+          stroke-width="3" paint-order="stroke fill"/>
+        <text x="225" y="396" fill="white" font-size="18" stroke="#000000"
+          stroke-width="3" paint-order="stroke fill">
           Manchester
         </text>
 
-        <circle cx="192" cy="455" r="8" fill="white"/>
-        <text x="205" y="461" fill="white" font-size="18">
+        <circle cx="192" cy="455" r="8" fill="white" stroke="#000000"
+          stroke-width="3" paint-order="stroke fill"/>
+        <text x="205" y="461" fill="white" font-size="18" stroke="#000000"
+          stroke-width="3" paint-order="stroke fill">
           Birmingham
         </text>
 
-        <circle cx="215" cy="540" r="8" fill="white"/>
-        <text x="230" y="546" fill="white" font-size="18">
+        <circle cx="215" cy="540" r="8" fill="white" stroke="#000000"
+          stroke-width="3" paint-order="stroke fill"/>
+        <text x="230" y="546" fill="white" font-size="18" stroke="#000000"
+          stroke-width="3" paint-order="stroke fill">
           London
         </text>
 
@@ -656,7 +670,7 @@
     <div class="feature">
       <div class="feature-number">3</div>
       <h3>Newcastle Based</h3>
-      <p>Local courier service covering Newcastle and the North East.</p>
+      <p>Local service covering Newcastle and the North East.</p>
     </div>
 
     <div class="feature">
@@ -672,7 +686,7 @@
 <section class="quote" id="quote">
 
   <div class="section-title">
-    <h2>Get a Courier Quote</h2>
+    <h2>Get a Quote</h2>
     <p>Call, email or send us your delivery details through WhatsApp.</p>
   </div>
 
@@ -699,7 +713,7 @@
         href="https://wa.me/447811237456?text=Hello%20RJH%20Couriers%2C%20I%20would%20like%20a%20courier%20quote."
         target="_blank"
       >
-        💬 Message on WhatsApp
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="icon" style="height:29px; width:auto; align-items:center; vertical-align: middle;"> Message on WhatsApp
       </a>
 
     </div>
@@ -740,7 +754,7 @@
       ></textarea>
 
       <button type="submit" class="btn btn-whatsapp">
-        Send Quote Request via WhatsApp
+       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="icon" style="height:30px; width:auto; align-items:center; vertical-align: middle;" > Send Quote Request via WhatsApp
       </button>
 
     </form>
@@ -757,14 +771,14 @@
 
   <p>
     Tel:
-    <a href="tel:07811237456" style="color:#f5b400;">
+    <a href="tel:07811237456" style="color:#FFFFFF;">
       07811 237456
     </a>
 
     |
 
     Email:
-    <a href="mailto:rjhcouriers@outlook.com" style="color:#f5b400;">
+    <a href="mailto:rjhcouriers@outlook.com" style="color:#FFFFFF;">
       rjhcouriers@outlook.com
     </a>
   </p>
